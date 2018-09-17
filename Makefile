@@ -41,6 +41,17 @@ GFXBUILD	:=	$(BUILD)
 #ROMFS		:=	romfs
 #GFXBUILD	:=	$(ROMFS)/gfx
 
+APP_TITLE	:=	GeekShop
+APP_AUTHOR	:=	bm0x
+APP_DESCRIPTION	:= GeekShop, eShop Clone for CIA's Games.
+
+# Path to the files
+# If left blank, will try to use "icon.png", "$(TARGET).png", or the default ctrulib icon, in that order
+ICON                :=	
+BANNER_AUDIO        :=	assets/audio.wav
+BANNER_IMAGE        :=	assets/banner.png
+RSF_PATH            :=	assets/app.rsf
+
 #---------------------------------------------------------------------------------
 # options for code generation
 #---------------------------------------------------------------------------------

@@ -17,7 +17,8 @@ int main()
   //Initialize GFX (note: not needed if you're using SF2Dlib)  
   gfxInitDefault();    
   consoleInit(GFX_TOP, NULL);    
-  printf("\x1b[15;10HGeekShop is in Under construction"); 
+  printf("\x1b[15;10HGeekShop is in Under construction");
+  printf("\x1b[18;15HPlease Wait!");
 
   // Main loop
   while (aptMainLoop())
@@ -33,7 +34,7 @@ int main()
     kUp = hidKeysUp();
 
    u32 kDown = hidKeysDown();
-		if (kDown & KEY_START)
+		if (kDown & KEY_TOUCH)
 			break; // break in order to return to hbmenu
 
 
